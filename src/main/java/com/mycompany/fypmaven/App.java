@@ -1,6 +1,8 @@
 package com.mycompany.fypmaven;
 
 import controller.ChartMapping;
+import controller.ContextRecognizer;
+import java.io.IOException;
 
 /**
  * Hello world!
@@ -8,9 +10,11 @@ import controller.ChartMapping;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
-        String str= ChartMapping.chartMapping(new Integer(7));
-        System.out.println(""+str);
+      //  String str= ChartMapping.chartMapping(new Integer(7));
+     //   System.out.println(""+str);
+        ContextRecognizer CR = new ContextRecognizer();
+        CR.callMethod();
     }
 }
